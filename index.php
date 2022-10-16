@@ -8,4 +8,6 @@
     $bot->sendMessage($message->getChat()->getId, $answer);
  });
 
+ $bot->run();
+
 ?>
