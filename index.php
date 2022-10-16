@@ -16,4 +16,10 @@ $chat_id = $result["message"]["chat"]["id"];
 $name = $result["message"]["from"]["username"];
 $keyboard = [["Последние статьи"],["Картинка"],["Гифка"]];
 
+$response = $telegram->getMe();
+
+$botId = $response->getId();
+$firstName = $response->getFirstName();
+$username = $response->getUsername();
+
 ?>
