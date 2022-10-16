@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'Trellobot'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_12638A891FB9448DADFE4AA1B11BD92D }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DE9041DFC0FB491392DB6628D0DE3601 }}
           package: .
