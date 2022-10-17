@@ -40,7 +40,7 @@
  if (mb_strtolower($event['message']['text']) == 'привет') {
     $autoAnswer = 'Приветствую, тебя человек';
  } else {
-    $autoAnswer = 'Я не знаю что это значит ' . $event['message']['text'] . "?\nМальчик не научил;)";
+    $autoAnswer = 'Привет';
  }
 
  getTelegramApi('sendMessage',
