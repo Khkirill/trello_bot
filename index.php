@@ -40,7 +40,7 @@
  if (mb_strtolower($event['message']['text']) == '/start') {
     $autoAnswer = 'Приветствую красивый';
  } else {
-    $autoAnswer = 'Привет ' . $event['message']['text'] . "?\nМальчик не научил;)";
+    $autoAnswer = 'Не знаю такие слова ' . $event['message']['text'] . "?\nМальчик пока что не научил;)";
  }
 
  getTelegramApi('sendMessage',
