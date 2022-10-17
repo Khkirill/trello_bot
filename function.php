@@ -27,5 +27,5 @@ function printAnswer($str) {
         )
     );
     exit();
- }
+}
 

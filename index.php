@@ -5,6 +5,11 @@
  require_once 'config.php';
  require_once 'function.php';
 
+ require_once 'webhook.php';
+ require_once 'get-board.php';
+ require_once 'up-board.php';
+
+
  $event = json_decode($GET_INPUT, 1);
 
  if (mb_strtolower($event['message']['text']) == '/start') {
