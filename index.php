@@ -38,9 +38,9 @@
  $event = json_decode($GET_INPUT, 1);
 
  if (mb_strtolower($event['message']['text']) == 'привет') {
-    $autoAnswer = 'Приветствую, тебя человек';
+    $autoAnswer = '/start';
  } else {
-    $autoAnswer = 'Привет';
+    $autoAnswer = 'Привет ' . $event['message']['text'] . "?\nМальчик не научил;)";
  }
 
  getTelegramApi('sendMessage',
