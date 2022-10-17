@@ -37,8 +37,8 @@
 
  $event = json_decode($GET_INPUT, 1);
 
- if (mb_strtolower($event['message']['text']) == 'привет') {
-    $autoAnswer = '/start';
+ if (mb_strtolower($event['message']['text']) == '/start') {
+    $autoAnswer = 'Приветствую красивый';
  } else {
     $autoAnswer = 'Привет ' . $event['message']['text'] . "?\nМальчик не научил;)";
  }
