@@ -22,14 +22,6 @@ if  ($event['action']['type'] == 'moveCardToBoard') {
 
 $trello = -1001377394217;
 
-getTelegramApi('sendMessage',
-   [
-       'text' => $autoAnswer,
-       'chat_id' => $trello
-   ]
-);
-
-
 $query = array(
     'key' => 'APIKey',
     'token' => 'APIToken'
@@ -39,7 +31,15 @@ $query = array(
     'https://api.trello.com/1/boards/{id}',
     $query
   );
-  
-  var_dump($response)
+
+var_dump($response);
+
+getTelegramApi('sendMessage',
+   [
+       'text' => $response,
+       'chat_id' => $trello
+   ]
+);
+
 
 ?>
