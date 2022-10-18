@@ -18,7 +18,7 @@ if  ($event['action']['type'] == 'moveCardToBoard') {
     $autoAnswer = 'Карточка была добавлена ';
  }
 
- $autoAnswer = "ZIG HAI";
+ //$autoAnswer = "ZIG HAI";
 
 $trello = -1001377394217;
 
@@ -29,5 +29,17 @@ getTelegramApi('sendMessage',
    ]
 );
 
+
+$query = array(
+    'key' => 'APIKey',
+    'token' => 'APIToken'
+  );
+  
+  $response = Unirest\Request::put(
+    'https://api.trello.com/1/boards/{id}',
+    $query
+  );
+  
+  var_dump($response)
 
 ?>
