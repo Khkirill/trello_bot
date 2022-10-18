@@ -19,7 +19,7 @@ if  ($event['action']['type'] == 'moveCardToBoard') {
  }
 
  
-$trello = 1001377394217;
+$trello = -1001377394217;
 
 getTelegramApi('sendMessage',
    [
