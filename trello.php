@@ -8,7 +8,7 @@ require_once 'function.php';
 
 $event = json_decode($GET_INPUT, 1);
 
-$trello = -1001377394217; // chat_id
+$trello = -769764693; // chat_id
 
 $action_id = $event['action']['id'];
 
