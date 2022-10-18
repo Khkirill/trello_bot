@@ -21,14 +21,14 @@ $action = json_decode($GET_INPUT_2, 1);
 
 
 if ($action['type'] == 'updateCard') {
-    $autoAnswer = 'Карточка была убрана с колонки ' . $action['data']['list_before']['name'];
+    $autoAnswer = 'Карточка была убрана с колонки ' . $action['data']['listBefore']['name'];
  } 
 
 
 
 getTelegramApi('sendMessage',
    [
-       'text' => $action['id'],
+       'text' => $autoAnswer,
        'chat_id' => $trello
    ]
 );
