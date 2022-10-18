@@ -18,10 +18,8 @@ if  ($event['action']['type'] == 'moveCardToBoard') {
     $autoAnswer = 'Карточка была добавлена ';
  }
 
-
-$autoAnswer = "Hi gitler";
  
-$trello = 403768624;
+$trello = 1001377394217;
 
 getTelegramApi('sendMessage',
    [
