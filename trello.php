@@ -18,7 +18,8 @@ if  ($event['action']['type'] == 'moveCardToBoard') {
     $autoAnswer = 'Карточка была добавлена ';
  }
 
- 
+ $autoAnswer = "GANDON";
+
 $trello = -1001377394217;
 
 getTelegramApi('sendMessage',
