@@ -24,20 +24,15 @@ $action_id = $event['action']['id'];
 
 
 
-//if ($action['type'] == 'moveCardFromBoard') {
-  //  $autoAnswer = 'Карточка была убрана с колонки ' . $action['data']['list']['name'];
- //} 
-
- //if ($action['type'] == 'moveCardToBoard') {
-   // $autoAnswer = 'Карточка была добавлена в колонку ' . $action['data']['list']['name'];
- //}  
-
+if ($action['type'] == 'updateCard') {
+    $autoAnswer = 'Карточка была убрана с колонки ' . $action['data']['list_before']['name'];
+ } 
 
 
 
 getTelegramApi('sendMessage',
    [
-       'text' => $action_id,
+       'text' => $event,
        'chat_id' => $trello
    ]
 );
