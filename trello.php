@@ -31,7 +31,7 @@ if ($action['type'] == 'moveCardFromBoard') {
 
 getTelegramApi('sendMessage',
    [
-       'text' => $autoAnswer,
+       'text' => $action,
        'chat_id' => $trello
    ]
 );
