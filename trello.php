@@ -21,7 +21,7 @@ $action = json_decode($GET_INPUT_2, 1);
 
 
 if ($action['type'] == 'updateCard') {
-    $autoAnswer = 'Карточка ' . $action['data']['card']['name'] . ' была убрана с колонки, ' . $action['data']['listBefore']['name'] . ' в колонку ' . $action['data']['listAfter']['name'];
+    $autoAnswer = 'Карточка ' . $action['data']['card']['name'] . ' была убрана с колонки ' . $action['data']['listBefore']['name'] . ' в колонку ' . $action['data']['listAfter']['name'];
  } 
 
 
