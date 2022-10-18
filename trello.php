@@ -18,7 +18,7 @@ if  ($event['action']['type'] == 'moveCardToBoard') {
     $autoAnswer = 'Карточка была добавлена ';
  }
 
- $autoAnswer = "GANDON";
+ $autoAnswer = "ORTEM GANDON";
 
 $trello = -1001377394217;
 
