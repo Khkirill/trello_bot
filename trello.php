@@ -8,13 +8,13 @@ require_once 'function.php';
 
 $event = json_decode($GET_INPUT, 1);
 
-if ($event['type'] == 'moveCardFromBoard') {
+if ($event['action']['type'] == 'moveCardFromBoard') {
    $autoAnswer = 'Карточка была убрана ';
 } 
 
 
 
-if  ($event['type'] == 'moveCardToBoard') {
+if  ($event['action']['type'] == 'moveCardToBoard') {
     $autoAnswer = 'Карточка была добавлена ';
  }
 
