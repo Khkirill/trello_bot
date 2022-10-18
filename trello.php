@@ -16,6 +16,8 @@ $GET_INPUT_2 = file_get_contents('https://api.trello.com/1/actions/'.$action_id.
 
 $action = json_decode($GET_INPUT_2, 1);
 
+
+
 if ($action['type'] == 'moveCardFromBoard') {
     $autoAnswer = 'Карточка была убрана с колонки ' . $action['data']['list']['name'];
  } 
@@ -29,7 +31,7 @@ if ($action['type'] == 'moveCardFromBoard') {
 
 getTelegramApi('sendMessage',
    [
-       'text' => $action,
+       'text' => $autoAnswer,
        'chat_id' => $trello
    ]
 );
